@@ -12,15 +12,17 @@ any program (txt files) and must be accessable by a public class, available in d
 
 structure of database files
 ----------------------------
-  [database_1]/
-      |_______________ table1.jsondb
-      |_______________ table2.jsondb
-      |_______________ table3.jsondb
-  [database_2]/
-      |_______________ table1.jsondb
-      |_______________ table2.jsondb
-      |_______________ table3.jsondb
-  [database_3]/
-      |_______________ table1.jsondb
-      |_______________ table2.jsondb
-      |_______________ table3.jsondb
+```
+[database_1]/
+    |_______________ table1.jsondb
+    |_______________ table2.jsondb
+    |_______________ table3.jsondb
+[database_2]/
+    |_______________ table1.jsondb
+    |_______________ table2.jsondb
+    |_______________ table3.jsondb
+[database_3]/
+    |_______________ table1.jsondb
+    |_______________ table2.jsondb
+    |_______________ table3.jsondb
+```

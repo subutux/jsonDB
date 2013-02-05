@@ -60,6 +60,8 @@ Using .jsonObj files:
 
 ```
 As you can see, these are basic templates for your jsondb files. Supported types:
+
+
 | value   | description                |
 | ------- |--------------------------: |
 | (str)   | string                     |

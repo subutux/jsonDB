@@ -60,13 +60,13 @@ Using .jsonObj files:
 
 ```
 As you can see, these are basic templates for your jsondb files. Supported types:
-|value  |               description |
-|-------|--------------------------:|
-|(str)  | string                    |
-|(bool) | boolean                   |
-|(uuid) | unique ids                |
-|(int)  | integer                   |
-|(date) | a javascript date object  |
+| value   | description                |
+| ------- |--------------------------: |
+| (str)   | string                     |
+| (bool)  | boolean                    |
+| (uuid)  | unique ids                 |
+| (int)   | integer                    |
+| (date)  | a javascript date object   |
 
 
 The viewer

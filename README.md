@@ -37,7 +37,7 @@ Structure of the database files (.jsondb)
 All the json data you could think of! But, structured with uniqe ids (uuid):
 ```json
 {
-    'qsdsdf-hqdfhqh-fdhd-hdfh':{
+    "qsdsdf-hqdfhqh-fdhd-hdfh":{
         "hosting" {
             "hosting-provider": "combell",
             "domain": "somedomain.org",
@@ -51,12 +51,12 @@ How to keep structure in this unstructure?
 ------------------------------------------
 Using .jsonObj files:
 ```json
-        "hosting" {
-            "hosting-provider": "(str)",
-            "domain": "(str)",
-            "renew-date": "(date)"
-        }
-    }
+"hosting" {
+    "hosting-provider": "(str)",
+    "domain": "(str)",
+    "renew-date": "(date)"
+}
+
 
 ```
 As you can see, these are basic templates for your jsondb files. Supported types:

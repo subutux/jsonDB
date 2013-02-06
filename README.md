@@ -62,17 +62,36 @@ Using .jsonObj files:
 As you can see, these are basic templates for your jsondb files. Supported types:
 
 
-| value   | description                |
-| ------- |--------------------------: |
-| (str)   | string                     |
-| (bool)  | boolean                    |
-| (uuid)  | unique ids                 |
-| (int)   | integer                    |
-| (date)  | a javascript date object   |
+| value    | description                  |
+| -------- |----------------------------: |
+| (str)    | string                       |
+| (bool)   | boolean                      |
+| (uuid)   | unique ids                   |
+| (int)    | integer                      |
+| (date)   | a javascript date object     |
+| (link:)  | inner link to another object |
 
+All of there are realy straightforward, except for one: (link:)
+exact syntax: `(link:799c8731-071c-4206-989c-8d3671a8436)`, where the last part is an uuid
+representing another object (or record, if you prefer that). This allows you to add objects
+into objects. for example: I have a master record called "Customer". This record contains
+values for Hardware,software,..? which are jsonObjects itself. So when the database is loaded
+a "Customer" object may contain a software record id. this id is looked up in all the .jsondb
+files. If the record is found, it makes an exact copy of it and puts it into the customer
+record. Note that changes made to the software record, doesn't affect the customers record!
 
 The viewer
 ----------
 The basic principe of the viewer is to view the database (duh), able to search through the database, put the database
 data in a pretty, readable layout.
+It needs to have the following functions:
+
+* search
+    * sql style `select('*').where({'hosting':'combell'}).order('asc')`
+* using basic html tags for displaying the results
+    * objects as `<ul></ul>`
+    * strings as `<li></li>`
+    * dates as datepickers
+    * arrays as `<table></table>`
+ 
 

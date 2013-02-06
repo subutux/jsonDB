@@ -87,7 +87,14 @@ data in a pretty, readable layout.
 It needs to have the following functions:
 
 * search
-    * sql style `db.q.select('*').where([['hosting','=','combell']]).where([['renew-date','>=','11-10-2013'],['renew-date','<=','27-12-2013']],'AND').order('asc')`
+    * sql style
+
+    ```javascript
+    var result = db.q.select('*')
+    .where([['hosting','=','combell']])
+    .where([['renew-date','>=','11-10-2013'],['renew-date','<=','27-12-2013']],'AND')
+    .order('asc')
+    ```
 * using basic html tags for displaying the results
     * objects as `<ul></ul>`
     * strings as `<li></li>`

@@ -41,7 +41,10 @@ All the json data you could think of! But, structured with uniqe ids (uuid):
         "hosting" {
             "hosting-provider": "combell",
             "domain": "somedomain.org",
-            "renew-date": "27-12-1013"
+            "renew-date": "27-12-1013",
+            "ftp-accounts":[
+                { "username": "user" }
+            ]
         }
     }
 }
@@ -55,6 +58,10 @@ Using .jsonObj files:
     "hosting-provider": "(str)",
     "domain": "(str)",
     "renew-date": "(date)"
+    "ftp-accounts":[
+        {"username":"(str)",
+         "password":"(str)"}
+    ]
 }
 
 
@@ -101,4 +108,26 @@ It needs to have the following functions:
     * dates as datepickers
     * arrays as `<table></table>`
 
+###Search SQL-style
+
+Uses the sql like javascript object. Each function returns an instance of itself (`this`),
+so you can mix up multiple where,contains,.. filters on the database.
+
+####Supported filters:
+##### select(`String/Array`)
+Just as the sql version of select, you can select the keys to return. If you want to return
+the while object, just use an '*' as parameter. Note that if you define a key of an object,
+(in our example `/hosting/ftp-accounts`) it will return that object.
+##### where(`Array`,`String`)
+* Array: containing an array of arrays of the following format: `['key/path','operator','value']`
+    * operator can be one of the following:
+        * `=` or `==`
+        * `!` or `!=`
+        * `<`
+        * `>`
+        * `<=`
+        * `>=`
+        * `LIKE` or `~`
+
+* String: containing how multiple filters will be handled; `'OR'` or `'AND'`
 

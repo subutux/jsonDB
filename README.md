@@ -138,3 +138,13 @@ return the resulted object.
 
 ##### done()
 Also a final function. Just returns the resulted object.
+
+### Paths you say?
+
+Yup! Like a normal directory listing, but for javascript objects. for example:
+
+* Path `/hosting/hosting-provider' will result in `combell` from our example.
+* Path `/hosting/ftp-accounts` will return the ftp-accounts object.
+* Path `/hosting/ftp-accounts/[0]` will return the first ftp-account.
+
+You can use DB.getPath(`String`) to get the value of the path.

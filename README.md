@@ -98,9 +98,9 @@ It needs to have the following functions:
 
     ```javascript
     var result = db.q.select('*')
-    .where([['hosting','=','combell']])
+    .where([['hosting-provider','=','combell']])
     .where([['renew-date','>=','11-10-2013'],['renew-date','<=','27-12-2013']],'AND')
-    .order('asc')
+    .orderBy('/hosting/hosting-provider','asc')
     ```
 * using basic html tags for displaying the results
     * objects as `<ul></ul>`
@@ -131,3 +131,10 @@ the while object, just use an '*' as parameter. Note that if you define a key of
 
 * String: containing how multiple filters will be handled; `'OR'` or `'AND'`
 
+##### orderBy(`String`,`String`)
+Do you want to return a sorted object? No problem. Just define the path to sort on and the
+direction. This is a final function. This means, it won't return a new instance, it will
+return the resulted object.
+
+##### done()
+Also a final function. Just returns the resulted object.

@@ -151,13 +151,13 @@ You can use DB.getPath(`String`) to get the value of the path.
 ## What's done?
 Here's a list of functions that's done/not done.
 
-- [X] Read/write the jsondb files
-- [X] jsondb template form generator (`jsonDBRecord.generateForm()`)
-- [X] DB.write()
-- [X] DB.addRecord()
-- [X] DB.save()
+- [x] Read/write the jsondb files
+- [x] jsondb template form generator (`jsonDBRecord.generateForm()`)
+- [x] DB.write()
+- [x] DB.addRecord()
+- [x] DB.save()
 - [ ] DB.getPath()
-- [X] _QueryDB.select()
-- [X] _QueryDB.where()
-- [X] _QueryDB.done()
+- [x] _QueryDB.select()
+- [x] _QueryDB.where()
+- [x] _QueryDB.done()
 - [ ] _QueryDB.orderBy()

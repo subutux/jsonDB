@@ -148,3 +148,16 @@ Yup! Like a normal directory listing, but for javascript objects. for example:
 * Path `/hosting/ftp-accounts/[0]` will return the first ftp-account.
 
 You can use DB.getPath(`String`) to get the value of the path.
+## What's done?
+Here's a list of functions that's done/not done.
+
+- [X] Read/write the jsondb files
+- [X] jsondb template form generator (`jsonDBRecord.generateForm()`)
+- [X] DB.write()
+- [X] DB.addRecord()
+- [X] DB.save()
+- [ ] DB.getPath()
+- [X] _QueryDB.select()
+- [X] _QueryDB.where()
+- [X] _QueryDB.done()
+- [ ] _QueryDB.orderBy()

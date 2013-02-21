@@ -136,6 +136,9 @@ Do you want to return a sorted object? No problem. Just define the path to sort 
 direction. This is a final function. This means, it won't return a new instance, it will
 return the resulted object.
 
+* `String`: The path to order on
+* `String`: `ASC` or `DESC`
+
 ##### done()
 Also a final function. Just returns the resulted object.
 

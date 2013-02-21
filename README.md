@@ -100,7 +100,7 @@ It needs to have the following functions:
     var result = db.q.select('*')
     .where([['hosting-provider','=','combell']])
     .where([['renew-date','>=','11-10-2013'],['renew-date','<=','27-12-2013']],'AND')
-    .orderBy('/hosting/hosting-provider','asc')
+    .orderBy('/hosting/hosting-provider','asc');
     ```
 * using basic html tags for displaying the results
     * objects as `<ul></ul>`
@@ -151,14 +151,17 @@ You can use DB.getPath(`String`) to get the value of the path.
 ## What's done?
 Here's a list of functions that's done/not done.
 
-
+### Features
 - ~~Read/write the jsondb files~~
 - ~~jsondb template form generator (`jsonDBRecord.generateForm()`)~~
+    - Array duplication in generated form
+
+### Functions
 - ~~DB.write()~~
 - ~~DB.addRecord()~~
 - ~~DB.save()~~
-- DB.getPath()
+- ~~DB.getPath()~~
 - ~~_QueryDB.select()~~
 - ~~_QueryDB.where()~~
 - ~~_QueryDB.done()~~
-- _QueryDB.orderBy()
+- ~~_QueryDB.orderBy()~~

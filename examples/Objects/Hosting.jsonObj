@@ -1,0 +1,20 @@
+{
+	"hosting":{
+		"id": "(uuid)",
+		"domain": "(str)",
+		"hostingprovider": "(str)",
+		"hostingpack": {
+			"webspace": "(str)",
+			"PHP": "(bool)",
+			"MySQL": "(bool)",
+			"email" : [{
+				"email-address": "(str)",
+				"password": "(str)"
+			}]
+		},
+		"ftp-account":[{
+			"username": "(str)",
+			"password": "(str)"
+		}]
+	}
+}
